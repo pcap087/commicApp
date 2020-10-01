@@ -14,8 +14,8 @@
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
             "outputPath": "dist/spa",
-            "index": "src/index.html",
-            "main": "src/main.ts",
+            "index": "dist/index.html",
+            "main": "dist/main.js",
             "polyfills": "src/polyfills.ts",
             "tsConfig": "tsconfig.app.json",
             "aot": true,
