@@ -14,8 +14,8 @@
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
             "outputPath": "dist/spa",
-            "index": "dist/index.html",
-            "main": "dist/main.js",
+            "index": "src/index.html",
+            "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
             "tsConfig": "tsconfig.app.json",
             "aot": true,
@@ -122,8 +122,13 @@
               "devServerTarget": "spa:serve:production"
             }
           }
+        },
+        "deploy": {
+          "builder": "angular-cli-ghpages:deploy",
+          "options": {}
         }
       }
-    }},
+    }
+  },
   "defaultProject": "spa"
 }
